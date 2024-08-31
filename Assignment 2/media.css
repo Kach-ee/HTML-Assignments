@@ -44,3 +44,18 @@ audio{
 h1{
     font-size: 2.5rem;
 }
+nav{
+    float: left;
+    padding: inherit;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+nav a{
+    text-decoration: none;
+    color: #321313;
+    font-weight: bold;
+    padding: 10px;
+}
+nav a:hover{
+    color: #f4991a;
+}
