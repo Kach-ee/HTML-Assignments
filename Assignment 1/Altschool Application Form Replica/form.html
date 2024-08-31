@@ -4,144 +4,154 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Altschool Application Form Replica</title>
+    <script
+      src="https://kit.fontawesome.com/56d3d67fda.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="form.css">
   </head>
   <body>
-    <section>
-      <header id="my-header">
-        <nav>
-          <a href="../index.html">Back to About Me</a>
-        </nav>
-      </header>
-      <main>
-        <img src="./AltSchool application.png" alt="Image depicting Learning" />
-        <span><h1>Learn highly sought after skills without hassle.</h1></span>
-      </main>
+    <main>
+    <section id="left-side">
+      <article id="main-text">
+        <img src="./AltSchool application.png" alt="Image depicting Learning" style="max-width: 100%; height:auto"/>
+        <span><h1>Learn highly sought <br>after skills without <br>hassle.</h1>
+      </article>
 
       <footer>
-        <p><a href="tel:0800ALTSCHOOL">Tel: 0800ALTSCHOOL</a></p>
-        <p>&copy;2024 AltSchool Africa. All rights reserved.</p>
+        <section id="socials">
+          <a href="https://twitter.com/altschoolafrica">
+            <i class="fa-brands fa-twitter" style="color: #0367f2"></i>
+          </a>
+
+          <a href="https://instagram.com/altschoolafrica">
+            <i class="fa-brands fa-instagram" style="color: #0367f2"></i>
+          </a>
+
+          <a href="https://facebook.com/AltSchoolAfrica">
+            <i class="fa-brands fa-facebook" style="color: #0367f2"></i>
+          </a>
+
+          <a href="https://linkedin.com/school/altschoolafrica">
+            <i class="fa-brands fa-linkedin-in" style="color: #0367f2"></i>
+          </a>
+        </section>
+        <p class="contactALT"><a href="tel:0800ALTSCHOOL">Tel: 0800ALTSCHOOL</a></p>
+        <p class="copyRights"><b>&copy;2024 AltSchool Africa. All rights reserved.</b></p>
       </footer>
     </section>
-    <br /><br /><br />
-    <section>
-      <header>
+    <section id="right-side">
+      <header id="my-header">
         <nav>
-          Already an AltSchooler?
-          <a href="https://portal.altschoolafrica.com/auth/login">Sign In!</a>
+          <p class="AboutKachi">
+            <a href="../index.html">About Me</a>
+          </p>
+          <p class="logIn">Already an AltSchooler?
+            <a href="https://portal.altschoolafrica.com/auth/login">Sign In!</a>
+          </p>
         </nav>
       </header>
-      <div>
+      <div class="registerDetails">
+      <section class="registerHeader">
         <h2>Signup</h2>
-        <p>Take the next steps to apply at AltSchool Africa</p>
-      </div>
+        <h4>Take the next steps to apply at AltSchool Africa</h4>
+      </section>
 
       <form action="">
-        <label for="FirstName"
-          >First Name <br /><input type="text" placeholder="Enter first name" />
-        </label>
-        <br />
-
-        <label for="LastName"
-          >Last Name <br /><input type="text" placeholder="Enter last name" />
-        </label>
-        <br />
-        <label for=""
-          >Gender
-          <br />
-          <select name="Gender" id="Gender">
-            <option value="invalid option">Enter gender</option>
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-          </select>
-        </label>
-        <br />
-        <label for="DOB"
-          >Date Of Birth <br /><input
-            type="date"
-            name="date of birth"
-            id="DOB"
-          />
-        </label>
-        <br />
-        <label for="email"
-          >Email Address <br /><input
-            type="email"
-            name="email-address"
-            id="email"
-            placeholder="Enter email address"
-          />
-        </label>
-        <br />
-        <label for="phone"
-          >Phone Number <br /><input
-            type="tel"
-            name="tel"
-            id="phone"
-            placeholder="08154387000"
-          />
-        </label>
-        <br />
-        <label for="country"
-          >Country <br /><select name="countries" id="country">
-            <option value="blank option">Select your country</option>
-            <option value="contry1">Nigeria</option>
-            <option value="contry2">Ghana</option>
-            <option value="contry3">United Kingdom</option>
-            <option value="contry4">Cameroon</option>
-          </select>
-        </label>
-        <br />
-        <label for="place of residence"
-          >State/ City of Residence <br /><input
-            type="text"
-            placeholder="Enter your state of residence"
-          />
-        </label>
-        <br />
-        <label for="mode of info"
-          >How did you hear about us? <br /><select
-            name="media"
-            id="modeOfInfo"
-          >
-            <option value="blank option">select channel</option>
-            <option value="twitter">Twitter</option>
-            <option value="Instagram">Instagram</option>
-            <option value="friend">Friend</option>
-            <option value="Facebook">Facebook</option>
-            <option value="LinkedIn">LinkedIn</option>
-            <option value="salesOff">Sales offer</option>
-            <option value="other">Other</option>
-          </select>
-        </label>
-        <br />
-        <label for=""
-          >Password <br /><input type="password" placeholder="Enter password" />
-        </label>
-        <br />
-        <label for=""
-          >Confirm Password <br /><input
-            type="password"
-            placeholder="Enter password again"
-          />
-        </label>
-        <br />
+        <div class="signUpRow">
+          <label for="FirstName">
+            First Name
+            <input type="text" id="FirstName" name="firstName" placeholder="Enter first name" />
+          </label>
+          <label for="LastName">
+            Last Name
+            <input type="text" id="LastName" name="lastName" placeholder="Enter last name" />
+          </label>
+        </div>
+      
+        <div class="signUpRow">
+          <label for="Gender">
+            Gender
+            <select name="gender" id="Gender">
+              <option value="" class="Holder">Select gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </label>
+          <label for="DOB">
+            Date Of Birth
+            <input type="date" name="dob" id="DOB" />
+          </label>
+        </div>
+      
+        <div class="signUpRow">
+          <label for="email">
+            Email Address
+            <input type="email" id="email" name="email" placeholder="Enter email address" />
+          </label>
+          <label for="phone">
+            Phone Number
+            <input type="tel" id="phone" name="phone" placeholder="08154387000" />
+          </label>
+        </div>
+      
+        <div class="signUpRow">
+          <label for="country">
+            Country
+            <select name="country" id="country">
+              <option value="" class="Holder">Select your country</option>
+              <option value="Nigeria">Nigeria</option>
+              <option value="Ghana">Ghana</option>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="Cameroon">Cameroon</option>
+            </select>
+          </label>
+          <label for="residence">
+            State/ City of Residence
+            <input type="text" id="residence" name="residence" placeholder="Enter your state of residence" />
+          </label>
+        </div>
+      
+        <div class="signUpRow">
+          <label for="modeOfInfo">
+            How did you hear about us?
+            <select name="media" id="modeOfInfo">
+              <option value="" class="Holder">Select channel</option>
+              <option value="twitter">Twitter</option>
+              <option value="Instagram">Instagram</option>
+              <option value="friend">Friend</option>
+              <option value="Facebook">Facebook</option>
+              <option value="LinkedIn">LinkedIn</option>
+              <option value="salesOff">Sales offer</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+        </div>
+      
+        <div class="signUpRow">
+          <label for="password">
+            Password
+            <input type="password" id="password" name="password" placeholder="Enter password" />
+          </label>
+          <label for="confirmPassword">
+            Confirm Password
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Enter password again" />
+          </label>
+        </div>
+      
         <p>
           By clicking continue, I agree to
-          <a href="https://www.altschoolafrica.com/terms-and-conditions"
-            >Terms of Use</a
-          >
+          <a href="https://www.altschoolafrica.com/terms-and-conditions">Terms of Use</a>
           and acknowledge that I have read the
-          <a href="https://www.altschoolafrica.com/privacy-policy"
-            >Privacy Policy</a
-          >.
+          <a href="https://www.altschoolafrica.com/privacy-policy">Privacy Policy</a>.
         </p>
-
-        <button value="submit">Submit</button>
+      
+        <button type="submit">Submit <i class="fa-solid fa-arrow-right"></i></button>
       </form>
-    </section>
-
-    <footer>
-      <a href="#my-header">Go to Top</a>
-    </footer>
+      
+    </div>
+    <a href="#my-header" class="fragment">Go To Top <i class="fa-solid fa-arrow-up"></i></a>
+  </section>
+  </main>
   </body>
 </html>

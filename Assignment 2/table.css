@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    margin: auto;
+    width: 90%;
+    background-image: url(./AltSchool.png);
+    display: flex;
+}
+table{
+    margin: auto;
+    border: 2px solid;
+    border-spacing: 0;
+    border-collapse: collapse;
+    background-color: #d5def5;
+}
+th,td {
+    border: 1px solid;
+    padding: 4px 6px;
+    text-align: left;
+    font-family: cursive;
+}
+thead th{
+    text-align: center;
+}
+caption{
+    font-size: 3rem;
+    font-weight: 600;
+}
